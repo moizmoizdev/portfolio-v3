@@ -15,17 +15,6 @@ const SkillSchema = new mongoose.Schema({
     type: String,
     required: [true, 'Please add a category'],
     enum: ['Frontend', 'Backend', 'Database', 'DevOps', 'Mobile', 'Other']
-  },
-  icon: {
-    type: String
-  },
-  featured: {
-    type: Boolean,
-    default: false
-  },
-  createdAt: {
-    type: Date,
-    default: Date.now
   }
 });
 
