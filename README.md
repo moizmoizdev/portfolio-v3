@@ -1,6 +1,6 @@
-# Portfolio Backend - Database
+# Portfolio Backend API
 
-This branch contains the database models and connection configuration for the portfolio API.
+This API provides endpoints for managing portfolio content. It uses MongoDB for data storage and Node.js/Express for the backend.
 
 ## Database Structure
 
@@ -54,3 +54,6 @@ MONGO_URI=mongodb://localhost:27017/portfolio
 ```
 npm run dev
 ``` 
+=======
+# portfolio-v3
+>>>>>>> d181b90696c955d7d65e6520967c34bea28ddd33
