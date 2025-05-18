@@ -16,9 +16,6 @@ const ExperienceSchema = new mongoose.Schema({
     type: String,
     required: [true, 'Please add a job description']
   },
-  responsibilities: {
-    type: [String]
-  },
   startDate: {
     type: Date,
     required: [true, 'Please add a start date']
@@ -29,10 +26,6 @@ const ExperienceSchema = new mongoose.Schema({
   current: {
     type: Boolean,
     default: false
-  },
-  createdAt: {
-    type: Date,
-    default: Date.now
   }
 });
 
