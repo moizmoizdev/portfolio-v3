@@ -1,5 +1,6 @@
 const express = require('express');
 const dotenv = require('dotenv');
+const cors = require('cors');
 const connectDB = require('./config/db');
 
 // Load env vars
@@ -13,6 +14,15 @@ const app = express();
 
 // Middleware
 app.use(express.json());
+app.use(cors({
+  origin: ['http://localhost:3000', 'http://localhost:10165'] // Frontend URLs
+}));
+
+// Routes
+app.use('/api/education', require('./routes/educationRoutes'));
+app.use('/api/skills', require('./routes/skillRoutes'));
+app.use('/api/projects', require('./routes/projectRoutes'));
+app.use('/api/experience', require('./routes/experienceRoutes'));
 
 // Default route
 app.get('/', (req, res) => {
