@@ -7,22 +7,17 @@ This branch contains the database models and connection configuration for the po
 ### Models
 
 #### Education
-- institution (String, required)
 - degree (String, required)
-- fieldOfStudy (String, required)
-- startDate (Date, required)
-- endDate (Date)
-- current (Boolean, default: false)
-- description (String)
-- createdAt (Date, default: now)
+- school (String, required)
+- years (String, required)
+- location (String, required)
+- about (String, required)
+- highlights (Array of Strings)
 
 #### Skill
 - name (String, required, unique)
 - proficiency (String, enum: ['Beginner', 'Intermediate', 'Advanced', 'Expert'], required)
 - category (String, enum: ['Frontend', 'Backend', 'Database', 'DevOps', 'Mobile', 'Other'], required)
-- icon (String)
-- featured (Boolean, default: false)
-- createdAt (Date, default: now)
 
 #### Project
 - title (String, required)
@@ -31,21 +26,15 @@ This branch contains the database models and connection configuration for the po
 - imageUrl (String)
 - githubUrl (String)
 - liveUrl (String)
-- featured (Boolean, default: false)
-- startDate (Date)
-- endDate (Date)
-- createdAt (Date, default: now)
 
 #### Experience
 - company (String, required)
 - position (String, required)
 - location (String)
 - description (String, required)
-- responsibilities (Array of Strings)
 - startDate (Date, required)
 - endDate (Date)
 - current (Boolean, default: false)
-- createdAt (Date, default: now)
 
 ## Setup
 
