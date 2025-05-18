@@ -1,0 +1,178 @@
+.education-section {
+  padding: 80px 0;
+  background-color: #121212;
+}
+
+.section-title {
+  color: #ffffff;
+  margin-bottom: 20px;
+  position: relative;
+  display: inline-block;
+}
+
+.section-title:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  width: 60px;
+  height: 3px;
+  background-color: #38bdf8;
+}
+
+.section-subtitle {
+  color: #aaaaaa;
+  max-width: 700px;
+  margin-bottom: 50px;
+}
+
+.education-table {
+  margin-bottom: 60px;
+  background-color: #1e1e1e !important;
+  border: 1px solid #333333;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.table-header {
+  background-color: #38bdf8;
+}
+
+.table-header th {
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 16px;
+}
+
+.table-icon {
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+.light-row {
+  background-color: #1e1e1e;
+}
+
+.dark-row {
+  background-color: #2a2a2a;
+}
+
+.degree-cell {
+  font-weight: 600;
+  color: #38bdf8;
+}
+
+.highlights-list {
+  padding-left: 20px;
+  margin: 0;
+}
+
+.highlights-list li {
+  color: #aaaaaa;
+  margin-bottom: 5px;
+}
+
+/* Mobile card styles */
+.mobile-education {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 40px;
+}
+
+.light-card, .dark-card {
+  border-radius: 8px;
+  border-left: 4px solid #38bdf8;
+}
+
+.light-card {
+  background-color: #1e1e1e !important;
+}
+
+.dark-card {
+  background-color: #2a2a2a !important;
+}
+
+.school-text {
+  color: #dddddd;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.year-text {
+  color: #38bdf8;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.details-text {
+  color: #aaaaaa;
+  margin-bottom: 15px;
+}
+
+.highlights-title {
+  color: #ffffff;
+  margin-bottom: 5px !important;
+}
+
+.highlights-list-mobile .MuiListItem-root {
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+.highlights-list-mobile .MuiListItemText-primary {
+  color: #aaaaaa;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 900px) {
+  .education-section {
+    padding: 60px 0;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+  }
+  
+  .education-table {
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+@media (max-width: 768px) {
+  .table-header th {
+    padding: 12px 8px;
+    font-size: 0.9rem;
+  }
+  
+  .MuiTableCell-root {
+    padding: 10px 8px;
+    font-size: 0.85rem;
+  }
+  
+  .section-subtitle {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .education-section {
+    padding: 40px 0;
+  }
+  
+  .section-title {
+    font-size: 1.75rem;
+  }
+  
+  .mobile-education {
+    gap: 12px;
+  }
+  
+  .highlights-list-mobile .MuiListItemText-primary {
+    font-size: 0.85rem;
+  }
+} 
